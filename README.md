@@ -1,65 +1,34 @@
-# Aplicación Web Simple en Python
+# Proyecto de Despliegue Automático en Azure
 
-## Características
+## Información del Estudiante
 
-- Interfaz web moderna y responsiva
-- Mensaje de bienvenida personalizado
-- API REST simple
-- Diseño atractivo con gradientes y animaciones
-- Totalmente funcional con Python puro
+- Nombre: Diana Paola Rivas Arana
+- Carné: 0907-22-15036
 
-## Cómo ejecutar
+## Descripción del Proyecto
 
-### 1. Instalar dependencias
+Este proyecto consiste en el desarrollo e implementación de una aplicación web sencilla utilizando tecnologías básicas de desarrollo web. La aplicación fue desplegada en la nube mediante Microsoft Azure App Service.
 
-```bash
-pip install -r requirements.txt
-```
+Además, se configuró un proceso de despliegue automático (CI/CD) utilizando GitHub Actions, permitiendo que cada cambio realizado en el repositorio se publique automáticamente en Azure al realizar un Push al repositorio remoto.
 
-### 2. Ejecutar la aplicación
+El objetivo principal del proyecto es demostrar el funcionamiento de un flujo básico de integración y despliegue continuo hacia la nube.
 
-```bash
-python app.py
-```
 
-### 3. Abrir en el navegador
+## Tecnologías Utilizadas
 
-Accede a: **http://localhost:5000**
+- Python 3.x
+- Flask - Framework web ligero
+- HTML5 - Estructura
+- CSS3 - Estilos
+- JavaScript - Interactividad
+- Git y GitHub
+- GitHub Actions
+- Microsoft Azure App Service
 
-## Estructura del proyecto
+## Funcionalidades
 
-```
-AppWeb/
-├── app.py                 # Archivo principal de la aplicación
-├── requirements.txt       # Dependencias del proyecto
-├── templates/
-│   └── index.html        # Página principal HTML
-└── README.md             # Este archivo
-```
-
-## Tecnologías utilizadas
-
-- **Python 3.x**
-- **Flask** - Framework web ligero
-- **HTML5** - Estructura
-- **CSS3** - Estilos
-- **JavaScript** - Interactividad
-
-## Ejemplos de uso
-
-### Acceso a la página principal
-```
-GET http://localhost:5000/
-```
-
-### Acceso a la API
-```
-GET http://localhost:5000/api/mensaje
-```
-
-```python
-@app.route('/')
-def bienvenida():
-    return render_template('index.html', mensaje="Tu mensaje aquí")
-```
+- Página web sencilla de bienvenida.
+- Repositorio público en GitHub.
+- Despliegue automático hacia Azure.
+- Actualización automática de cambios mediante Push.
 
