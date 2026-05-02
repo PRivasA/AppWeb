@@ -1,8 +1,6 @@
 # Aplicación Web Simple en Python
 
-Una aplicación web sencilla desarrollada con **Flask** que muestra un mensaje de bienvenida.
-
-## 📋 Características
+## Características
 
 - Interfaz web moderna y responsiva
 - Mensaje de bienvenida personalizado
@@ -10,7 +8,7 @@ Una aplicación web sencilla desarrollada con **Flask** que muestra un mensaje d
 - Diseño atractivo con gradientes y animaciones
 - Totalmente funcional con Python puro
 
-## 🚀 Cómo ejecutar
+## Cómo ejecutar
 
 ### 1. Instalar dependencias
 
@@ -28,7 +26,7 @@ python app.py
 
 Accede a: **http://localhost:5000**
 
-## 📁 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 AppWeb/
@@ -39,7 +37,7 @@ AppWeb/
 └── README.md             # Este archivo
 ```
 
-## 🛠️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **Python 3.x**
 - **Flask** - Framework web ligero
@@ -47,7 +45,7 @@ AppWeb/
 - **CSS3** - Estilos
 - **JavaScript** - Interactividad
 
-## 📝 Ejemplos de uso
+## Ejemplos de uso
 
 ### Acceso a la página principal
 ```
@@ -59,30 +57,9 @@ GET http://localhost:5000/
 GET http://localhost:5000/api/mensaje
 ```
 
-Respuesta:
-```json
-{
-  "mensaje": "¡Hola desde la API!"
-}
-```
-
-## 🎨 Personalización
-
-Para cambiar el mensaje de bienvenida, edita el archivo `app.py`:
-
 ```python
 @app.route('/')
 def bienvenida():
     return render_template('index.html', mensaje="Tu mensaje aquí")
 ```
 
-## 📦 Próximos pasos
-
-Puedes mejorar la aplicación agregando:
-- Base de datos (SQLite, PostgreSQL)
-- Más rutas y funcionalidades
-- Autenticación de usuarios
-- Más estilos y componentes
-- Validación de formularios
-
-¡Disfruta programando! 🎉
